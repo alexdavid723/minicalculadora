@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_margin="15dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini calculadora: "
+            android:layout_marginBottom="15sp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Limpiar Campos"
+            android:textSize="20sp"></Button>
+        <EditText
+            android:id="@+id/edtNumero1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:hint="Numero 1"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+
+            ></EditText>
+        <EditText
+            android:id="@+id/edtNumero2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:hint="Numero 2"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+
+            ></EditText>
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado : 0"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/backgroundbutton"
+            android:text="Sumar"
+
+
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/backgroundbutton"
+            android:text="dividir"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/btnRaiz"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/backgroundbutton"
+            android:text="Raiz"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/btnPotencia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/backgroundbutton"
+            android:text="Potencia"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/btnUnosobre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/backgroundbutton"
+            android:text="1/"
+            android:textSize="20sp"></Button>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
